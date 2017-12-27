@@ -1,0 +1,21 @@
+[
+	"Array",
+	"Boolean",
+	"Date",
+	"Error",
+	"Function",
+	"JSON",
+	"Math",
+	"Number",
+	"Object",
+	"RegExp",
+	"String",
+	"Map",
+	"Set",
+	"WeakMap",
+	"WeakSet",
+	"instanceof",
+	"typeof",
+	"document",
+	"window"
+]

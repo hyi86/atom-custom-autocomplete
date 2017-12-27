@@ -1,0 +1,17 @@
+{
+  "name": "atom-custom-autocomplete",
+  "version": "0.1.1",
+  "main": "lib/main",
+  "author": "Yongil Hong",
+  "engines": {
+    "atom": ">=1.15.0 <2.0.0"
+  },
+  "private": true,
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  }
+}
