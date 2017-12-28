@@ -1,21 +1,7 @@
 [
-	"Array",
-	"Boolean",
-	"Date",
-	"Error",
-	"Function",
-	"JSON",
-	"Math",
-	"Number",
-	"Object",
-	"RegExp",
-	"String",
-	"Map",
-	"Set",
-	"WeakMap",
-	"WeakSet",
-	"instanceof",
-	"typeof",
-	"document",
-	"window"
+	"Array", "Boolean", "Date", "Error", "Function", "JSON", "Math", "Number", "Object", "RegExp", "String",
+	"instanceof", "typeof", "undefined", "document", "window",
+	"NaN", "Infinity", "Error",
+	"Map", "Set", "WeakMap", "WeakSet",
+	"Promise", "Reflect", "Proxy", "Intl", "WebAssembly"
 ]

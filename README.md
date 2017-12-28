@@ -1,24 +1,16 @@
 ## 사전설정
 
-### 필수 추가모듈 설치
-Atom 사용시 코딩에 도움을 주는 모듈들을 설치한다.
+### 추가모듈 설치
+편의성을 위해서 추가 패키지를 설치한다.
 
-  - __aligner__  
-    세로 라인을 정렬해주는 모듈.
-  - __aligner-javascript__  
-    세로 라인을 정렬해주는 모듈.(Aligner Add-on)
   - __autocomplete-modules__  
     Javascript(Node.js, Typescript ...) 사용시, Path 를 자동으로 찾아주는 모듈.
   - __chary-tree-view__  
     Tree view에서 더블 클릭 시에만 파일을 열도록 해주는 모듈.
   - __emmet__  
     젠코딩(Zencoding) 자동완성 모듈
-  - __file-icons__  
-    파일 아이콘 모음
   - __highlight-selected__  
     텍스트 에디터에서 선택 시, 자동으로 같은 단어를 찾아 선택해주는 모듈.
-  - __language-apache__  
-    Apache HTTPD 문법/자동완성 모듈.
   - __language-babel__  
     Babel, ES6/7 문법/자동완성 모듈.
   - __minimap__  
@@ -28,20 +20,28 @@ Atom 사용시 코딩에 도움을 주는 모듈들을 설치한다.
   - __sort-lines__  
     텍스트 에디터에서 `F5`를 누르면 Text가 정렬되도록 해주는 모듈.
 
-    ```sh
-    apm install autocomplete-modules chary-tree-view emmet file-icons highlight-selected \
-    language-apache language-babel minimap minimap-highlight-selected sort-lines
-    ```
+  ```sh
+  apm install autocomplete-modules chary-tree-view emmet highlight-selected
+  language-babel minimap minimap-highlight-selected sort-lines
+  ```
 
 ### 설정파일 변경
-  에디터에서 `File > Config...`에서 다음의 항목들을 수정.
+Atom 에디터를 열고 `Menu > File > Config...` 에서 다음의 항목들을 수정.
 
 ```cson
 "*":
   "chary-tree-view":
     "dirSingleClick": false
   "core":
-    "packagesWithKeymapsDisabled": ["emmet"]
+    "disabledPackages": [
+      "spell-check"
+      "styleguide"
+      "welcome"
+    ]
+    "packagesWithKeymapsDisabled": [
+      "emmet"
+      "spell-check"
+    ]
     "telemetryConsent": "no"
   "editor":
     "fontFamily": "D2Coding"
@@ -49,8 +49,6 @@ Atom 사용시 코딩에 도움을 주는 모듈들을 설치한다.
     "scrollPastEnd": true
     "showIndentGuide": true
     "softWrap": true
-  "file-icons":
-    "coloured": false
   "minimap":
     "plugins":
       "highlight-selected": true
@@ -71,7 +69,6 @@ Atom 사용시 코딩에 도움을 주는 모듈들을 설치한다.
   "ctrl-h": "emmet:evaluate-math-expression"
 ```
 
----
 
 ## 커스텀 자동완성
 
