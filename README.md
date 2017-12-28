@@ -20,9 +20,10 @@
   - __sort-lines__  
     텍스트 에디터에서 `F5`를 누르면 Text가 정렬되도록 해주는 모듈.
 
+  터미널에 입력한다.
+
   ```sh
-  apm install autocomplete-modules chary-tree-view emmet highlight-selected
-  language-babel minimap minimap-highlight-selected sort-lines
+  apm install autocomplete-modules chary-tree-view emmet highlight-selected language-babel minimap minimap-highlight-selected sort-lines
   ```
 
 ### 설정파일 변경
@@ -53,8 +54,6 @@ Atom 에디터를 열고 `Menu > File > Config...` 에서 다음의 항목들을
     "plugins":
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
-  "welcome":
-    "showOnStartup": false
 ```
 
 ### Keymap 변경
