@@ -3,5 +3,6 @@
 	"instanceof", "typeof", "undefined", "document", "window",
 	"NaN", "Infinity", "Error",
 	"Map", "Set", "WeakMap", "WeakSet",
-	"Promise", "Reflect", "Proxy", "Intl", "WebAssembly"
+	"Promise", "Reflect", "Proxy", "Intl", "WebAssembly",
+	"preventDefault", "stopPropagation"
 ]
